@@ -1,6 +1,6 @@
 'use strict'
 require('@code-fellows/supergoose');
-
+const mongoose = require('mongoose');
 const Notes = require('../lib/notes.js');
 
 const notes = new Notes();
@@ -19,8 +19,8 @@ describe('note section', () => {
         return notes.execute({ action, payload})
             .then(results => {
                 expect(notes.add).toHaveBeenCalled();
-            })
-    })
+            });
+    });
     it('notes() can return a saved note ', () => {
         const action = 'add';
         const payload = 'taste note';

@@ -26,8 +26,6 @@ function helpMe(){
     console.error('Error!');
     process.exit();
 }
-console.log('this is your input', input)
-console.log('this is the note', notes)
 // console.log(options.action)
 // console.log(options.payload)
 // notes.fetch(options);
