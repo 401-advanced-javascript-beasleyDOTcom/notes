@@ -6,6 +6,8 @@ const Notes = require('../lib/notes.js');
 const notes = new Notes();
 jest.spyOn(notes, 'add');
 
+
+
 describe('note section', () => {
     it('execute() does nothing with invalid options', () => {
         return notes.execute({})
@@ -30,4 +32,8 @@ describe('note section', () => {
                 expect(savedNote.text).toBe('taste note');
             })
     });
+    // it('should delete a note', () => {
+    //     const action = 'delete';
+    //     const payload = 
+    // });
 });

@@ -12,7 +12,7 @@ const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
 
 const input = new Input();
-const notes = new Notes(input);
+const notes = new Notes();
 
 if(input.valid()){
     notes.execute(input.command)
@@ -23,7 +23,7 @@ if(input.valid()){
     helpMe();
 }
 function helpMe(){
-    console.error('Error!');
+    console.error('Error! on line 26 of index');
     process.exit();
 }
 // console.log(options.action)
