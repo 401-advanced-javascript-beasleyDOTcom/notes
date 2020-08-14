@@ -7,12 +7,15 @@
     "lib": "lib"
   },
   "dependencies": {
-    "@code-fellows/supergoose": "^1.0.2",
     "jest": "^26.3.0",
     "minimist": "^1.2.5",
     "mongoose": "^5.9.28"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@code-fellows/supergoose": "^1.0.2",
+    "faker": "^4.1.0",
+    "jest": "^25.1.0"
+  },
   "scripts": {
     "start": "node index.js",
     "lint": "eslint **/*.js",
