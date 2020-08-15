@@ -1,8 +1,7 @@
 'use strict'
 
-const NotesSchema = require('../lib/notes-schema.js');
+const NotesSchema = require('./notes-schema.js');
 const mongoose = require('mongoose');
-const { create } = require('../lib/notes-schema.js');
 const notesy = mongoose.schema;
 
 class NotesCollection{
@@ -11,12 +10,16 @@ class NotesCollection{
         
         return note.save();
     };
-    get(){
-
+    get(category){
+        return category ? NotesSchema.find(category): NotesSchema.find({});
     };
    
-    delete(){};
+    delete(id){
+       return NotesSchema.findByIdAndDelete(id);
+    };
 }
 
 
 module.exports = NotesCollection;
+
+// I refence NotesSchema

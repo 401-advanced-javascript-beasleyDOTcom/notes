@@ -8,3 +8,10 @@ You should then see what you have typed printed in the CLI.
 
 ## day 2
 This was a tough day.. I would have been easier to start from scratch than to untie and tie as many lines of code as I did to get these tests to pass. 
+
+## day 3 and 4
+I spent most of Day 3 and 4 getting this app to pass lab 3 standards hustling to submit something by the midnight due date. 
+
+## day 5
+BUT then I finally got to finish lab 4 on day 5! 
+a huge 'ah ha' moment came to me today when Cait was helping me. I had thought that the .delete() and .get() functions were built in methods to mongoDB but didn't realize until today that I was calling those functions through the require(filepath) sort of tethering!
